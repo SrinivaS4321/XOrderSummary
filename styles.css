@@ -1,0 +1,200 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: #e0e8ff;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(56, 42, 225, 0.12);
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 40px 48px 32px;
+}
+
+.heading {
+    color: #1f2f56;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+.summary-para {
+    color: #7280a7;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px;
+    margin-bottom: 28px;
+    background: #f8f9fe;
+    border-radius: 12px;
+}
+
+.music-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.plan-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    flex: 1;
+    color: #1f2f56;
+    font-size: 14px;
+}
+
+.plan-text strong {
+    font-weight: 900;
+}
+
+.plan-text span {
+    color: #7280a7;
+}
+
+.change-link a {
+    color: #3829e0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.change-link a:hover {
+    color: #766cf1;
+    text-decoration: none;
+}
+
+.proceed-btn {
+    display: block;
+    width: 100%;
+    padding: 16px 12px;
+    border: none;
+    border-radius: 10px;
+    background: #3829e0;
+    color: #ffffff;
+    font: inherit;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 12px 22px rgba(56, 41, 224, 0.25);
+    transition: background-color 0.2s ease;
+}
+
+.proceed-btn:hover {
+    background-color: #766cf1;
+}
+
+.cancel-order {
+    margin-top: 26px;
+    border: none;
+    background: transparent;
+    color: #7280a7;
+    font: inherit;
+    font-weight: 900;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.cancel-order:hover {
+    color: #1f2f56;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #766cf1;
+    outline-offset: 4px;
+}
+
+.attribution {
+    padding: 16px;
+    text-align: center;
+    font-size: 12px;
+    color: #1f2f56;
+}
+
+.attribution a {
+    color: #3829e0;
+}
+
+@media (max-width: 450px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-size: 100% auto;
+    }
+
+    .main {
+        padding: 24px;
+    }
+
+    .container {
+        max-width: 350px;
+        border-radius: 20px;
+    }
+
+    .content {
+        padding: 32px 24px;
+    }
+
+    .heading {
+        font-size: 23px;
+    }
+
+    .summary-para {
+        font-size: 15px;
+    }
+
+    .plan {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .music-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .plan-text,
+    .change-link a {
+        font-size: 13px;
+    }
+}
